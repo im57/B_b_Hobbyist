@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <!-- Home-->
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="im.mobile.b_b_hobbyist.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <!-- Info-->
+    <fragment
+        android:id="@+id/nav_app"
+        android:name="im.mobile.b_b_hobbyist.ui.info.AppFragment"
+        android:label="@string/menu_app"
+        tools:layout="@layout/fragment_app" />
+
+    <fragment
+        android:id="@+id/nav_developer"
+        android:name="im.mobile.b_b_hobbyist.ui.info.DeveloperFragment"
+        android:label="@string/menu_developer"
+        tools:layout="@layout/fragment_developer" />
+
+    <!-- Movie-->
+    <fragment
+        android:id="@+id/nav_movie"
+        android:name="im.mobile.b_b_hobbyist.ui.movie.MovieFragment"
+        android:label="@string/menu_movie"
+        tools:layout="@layout/fragment_movie" >
+
+        <action android:id="@+id/action_to_moive_search"
+            app:destination="@id/nav_movie_search"/>
+        <action android:id="@+id/action_to_moive_detail"
+            app:destination="@id/nav_movie_detail"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_movie_search"
+        android:name="im.mobile.b_b_hobbyist.ui.movie.SearchMovieFragment"
+        android:label="@string/menu_movie"
+        tools:layout="@layout/fragment_movie" >
+
+        <action android:id="@+id/action_to_moive_detail"
+            app:destination="@id/nav_movie_detail"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_movie_detail"
+        android:name="im.mobile.b_b_hobbyist.ui.movie.DetailMovieFragment"
+        android:label="@string/menu_movie"
+        tools:layout="@layout/fragment_movie" >
+    </fragment>
+
+    <!-- Book-->
+    <fragment
+        android:id="@+id/nav_book"
+        android:name="im.mobile.b_b_hobbyist.ui.book.BookFragment"
+        android:label="@string/menu_book"
+        tools:layout="@layout/fragment_book" >
+
+        <action android:id="@+id/action_to_book_search"
+            app:destination="@id/nav_book_search"/>
+        <action android:id="@+id/action_to_book_library"
+            app:destination="@id/nav_library"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_book_search"
+        android:name="im.mobile.b_b_hobbyist.ui.book.SearchBookFragment"
+        android:label="@string/menu_book"
+        tools:layout="@layout/fragment_book_search" >
+
+        <action android:id="@+id/action_to_book_detail"
+            app:destination="@id/nav_book_detail"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_book_detail"
+        android:name="im.mobile.b_b_hobbyist.ui.book.DetailBookFragment"
+        android:label="@string/menu_book"
+        tools:layout="@layout/fragment_book_detail" />
+
+    <fragment
+        android:id="@+id/nav_library"
+        android:name="im.mobile.b_b_hobbyist.ui.book.LibraryFragment"
+        android:label="@string/menu_book"
+        tools:layout="@layout/fragment_library" />
+
+    <!-- Show-->
+    <fragment
+        android:id="@+id/nav_show"
+        android:name="im.mobile.b_b_hobbyist.ui.show.ShowFragment"
+        android:label="@string/menu_show"
+        tools:layout="@layout/fragment_show" >
+
+        <action android:id="@+id/action_to_show_search"
+            app:destination="@id/nav_show_search"/>
+        <action android:id="@+id/action_to_show_museum"
+            app:destination="@id/nav_show_museum"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_show_search"
+        android:name="im.mobile.b_b_hobbyist.ui.show.SearchShowFragment"
+        android:label="@string/menu_show"
+        tools:layout="@layout/fragment_show" >
+
+        <action android:id="@+id/action_to_show_detail"
+            app:destination="@id/nav_show_detail"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_show_detail"
+        android:name="im.mobile.b_b_hobbyist.ui.show.DetailShowFragment"
+        android:label="@string/menu_show"
+        tools:layout="@layout/fragment_show" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_show_museum"
+        android:name="im.mobile.b_b_hobbyist.ui.show.MuseumFragment"
+        android:label="@string/menu_show"
+        tools:layout="@layout/fragment_show" >
+    </fragment>
+
+    <!-- Exercise-->
+    <fragment
+        android:id="@+id/nav_exercise"
+        android:name="im.mobile.b_b_hobbyist.ui.exercise.ExerciseFragment"
+        android:label="@string/menu_exercise"
+        tools:layout="@layout/fragment_exercise" />
+</navigation>

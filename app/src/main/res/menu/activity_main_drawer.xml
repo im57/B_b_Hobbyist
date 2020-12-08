@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_movie"
+            android:icon="@drawable/movie"
+            android:title="@string/menu_movie" />
+        <item
+            android:id="@+id/nav_book"
+            android:icon="@drawable/book"
+            android:title="@string/menu_book" />
+        <item
+            android:id="@+id/nav_show"
+            android:icon="@drawable/show"
+            android:title="@string/menu_show" />
+        <item
+            android:id="@+id/nav_exercise"
+            android:icon="@drawable/exercise"
+            android:title="@string/menu_exercise" />
+    </group>
+
+    <item android:title="Info">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_app"
+                    android:icon="@drawable/app"
+                    android:title="@string/menu_app" />
+                <item
+                    android:id="@+id/nav_developer"
+                    android:icon="@drawable/developer"
+                    android:title="@string/menu_developer" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Home">
+        <menu>
+            <item
+                android:id="@+id/nav_home"
+                android:icon="@drawable/home"
+                android:title="@string/menu_home" />
+        </menu>
+    </item>
+
+</menu>

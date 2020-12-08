@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">BbHobbyist</string>
+
+    <string name="dev_name">dev.CapIM</string>
+    <string name="dev_email">eovhehd1986@gmail.com</string>
+
+    <string name="menu_home">홈</string>
+    <string name="menu_app">앱 정보</string>
+    <string name="menu_developer">개발자 정보</string>
+    <string name="menu_movie">영화 감상</string>
+    <string name="menu_book">독서</string>
+    <string name="menu_show">공연/전시 관람</string>
+    <string name="menu_exercise">운동</string>
+
+    <string name="key_movie">626e39c86025eeb9826ca4ee36b167d5</string>
+
+    <string name="url_movie_boxoffice">http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?</string>
+    <string name="url_movie_boxoffice2">http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=626e39c86025eeb9826ca4ee36b167d5&amp;targetDt=20201206</string>
+
+    <string name="url_movie_list">http://www.kobis.or.kr/kobisopenapi/webservice/rest/movie/searchMovieList.json?&amp;itemPerPage=100</string>
+    <string name="url_movie_list2">http://www.kobis.or.kr/kobisopenapi/webservice/rest/movie/searchMovieList.json?key=626e39c86025eeb9826ca4ee36b167d5&amp;itemPerPage=100</string>
+    <string name="url_movie_search">http://www.kobis.or.kr/kobisopenapi/webservice/rest/movie/searchMovieList.json?&amp;itemPerPage=100</string>
+    <string name="url_movie_search2">http://www.kobis.or.kr/kobisopenapi/webservice/rest/movie/searchMovieList.json?key=626e39c86025eeb9826ca4ee36b167d5&amp;itemPerPage=100&amp;movieNm=황해</string>
+
+    <string name="url_movie_detail">http://www.kobis.or.kr/kobisopenapi/webservice/rest/movie/searchMovieInfo.json?</string>
+    <string name="url_movie_detail2">http://www.kobis.or.kr/kobisopenapi/webservice/rest/movie/searchMovieInfo.json?key=626e39c86025eeb9826ca4ee36b167d5&amp;movieCd=20101222</string>
+
+    <string name="url_movie">http://api.koreafilm.or.kr/openapi-data2/wisenut/search_api/search_json2.jsp?listCount=500&amp;ServiceKey=ZF2Q6049BPB2FW4RIXC4</string>
+
+    <string name="url_book">http://175.125.91.94/oasis/service/rest/convergence2018/conver6?numOfRows=100&amp;keyword=</string>
+    <string name="url_book2">http://175.125.91.94/oasis/service/rest/convergence2018/conver6?numOfRows=100&amp;keyword=%EC%82%AC%EA%B3%BC</string>
+
+    <string name="url_library">http://www.culture.go.kr/openapi/rest/cultureartspaces/library</string>
+
+
+</resources>
